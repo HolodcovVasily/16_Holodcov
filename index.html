@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>16_Holodcov</title>
+    <link rel="icon" href="./images/icon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <div class="wrapper">
+    <form action="#" class="date">
+      <div>
+        Укажите начальную дату диапазона
+        <input type="date" class="min_date" required />
+        <p class="hidden-text" hidden>
+          * начальная дата должна быть меньше конечной даты!
+        </p>
+      </div>
+      <div>
+        Укажите конечную дату диапазона
+        <input type="date" class="max_date" required disabled />
+      </div>
+
+      <button disabled>Рассчитать</button>
+    </form>
+    <div>
+      <div>
+        Курс USD минимальный за указанный промежуток времени:
+        <input type="date" class="date_min_value" disabled />
+        <input type="number" class="min_course" disabled />
+      </div>
+      <div>
+        Курс USD максимальный за указанный промежуток времени:
+        <input type="date" class="date_max_value" disabled />
+        <input type="number" class="max_course" disabled />
+      </div>
+    </div>
+  </div>
+  <body>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
